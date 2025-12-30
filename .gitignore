@@ -1,38 +1,40 @@
-# Comprehensive .gitignore template for AI-generated projects
-# Covers most common languages, frameworks, and tools
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# ===== GENERAL =====
-# OS generated files
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-*~
+*.pem
 
-# Editor directories and files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# ===== NODE.JS / JAVASCRIPT =====
-# Dependencies
-node_modules/
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-pnpm-debug.log*
 
-# Package manager lock files
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-.pnpm-store/
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# remotion
+.remotion/
 
 # Runtime data
 pids
